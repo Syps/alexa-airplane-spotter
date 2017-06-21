@@ -1,0 +1,28 @@
+{
+  "name": "plane_spotter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syps/plane_spotter.git"
+  },
+  "author": "NLS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Syps/plane_spotter/issues"
+  },
+  "homepage": "https://github.com/Syps/plane_spotter#readme",
+  "devDependencies": {
+    "python-shell": "^0.4.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

@@ -1,0 +1,10 @@
+appdirs==1.4.3
+beautifulsoup4==4.6.0
+gpxpy==1.1.2
+lxml==3.7.3
+-e git+https://github.com/openskynetwork/opensky-api.git@0e0bce4c82a719632a1a744a7c0ac58fc0184ff3#egg=opensky_api&subdirectory=python
+packaging==16.8
+pymongo==3.4.0
+pyparsing==2.2.0
+requests==2.14.2
+six==1.10.0

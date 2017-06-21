@@ -1,0 +1,8 @@
+*.pyc
+settings.py
+*.zip
+plane_spotter/
+node_modules/
+lambda/lambda_settings.py
+.cache/
+*.log
