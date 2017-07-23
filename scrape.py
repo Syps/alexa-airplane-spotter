@@ -10,14 +10,6 @@ import settings
 
 route_data_endpoint = 'https://www.flightradar24.com/data/aircraft/{}'
 
-with open('icao_codes.tsv', 'r') as f:
-    airplane_codes = {}
-    icao_codes = csv.reader(f, delimiter='\t')
-    next(icao_codes, None)
-    for row in icao_codes:
-        code, iata, name = row
-        airplane_codes[code] = name
-
 
 def get_departure_airport(row):
     airport = row.findAll('td')[2].find('span').text
