@@ -58,7 +58,8 @@ def most_recent_departure(soup):
 def scrape_route_data(reg_no):
     url = route_data_endpoint.format(reg_no) #flightradar24.com/data/aircraft/{}
     logger.info("url={}".format(url))
-    res = requests.get(url) #
+    headers = {'user-agent': 'curl/7.38.0'} # cloudfare 418 workaround
+    res = requests.get(url, headers=headers)
     route_row = most_recent_departure(BeautifulSoup(res.text, "lxml"))
 
     depart = route_row.findAll('td')[2].find('span').text
