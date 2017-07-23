@@ -1,5 +1,4 @@
 *.pyc
-settings.py
 *.zip
 plane_spotter/
 node_modules/

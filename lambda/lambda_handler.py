@@ -30,7 +30,7 @@ def get_response():
                 "text": ""
               }
             },
-            "shouldEndSession": 'false'
+            "shouldEndSession": 'true'
           },
           "sessionAttributes": {}
         }
