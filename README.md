@@ -20,10 +20,13 @@ Check out the blog post here: https://www.nicksypteras.com/projects/teaching-ale
 
    `python load_db.py`
 
-3. Add your coordinates to the settings.py file
+4. Add your coordinates to the settings.py file
 
-3. Start the local server
+5. Start the local server
 
    `node server.js`
 
-4. Test it out! `curl http://localhost:3000` to see the description of nearby airplane activity 
+6. Test it out! `curl http://localhost:3000` to see the description of nearby airplane activity
+
+### Notes
+When building the Alexa skill, you will need to upload the `requests` module to AWS Lambda along with `lambda/lambda_helper.py`. You can do this by installing `requests` into the `lambda/` directory via `pip install requests -t ./lambda`, and then uploading the zipped directory.
